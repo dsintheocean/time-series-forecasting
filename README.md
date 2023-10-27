@@ -19,4 +19,4 @@ The target RMSE metric was achieved using an LGBM model with the following hyper
 On the test dataset, an RMSE value of 41.90 was achieved, which is better than the target value of <= 48.  
 
 ## Additional Information
-Toolkit: Pandas, Python, Scikit-learn, statsmodels
+Toolkit: Pandas, Python, LightGBM, Scikit-learn, statsmodels
