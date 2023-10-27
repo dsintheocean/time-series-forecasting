@@ -20,4 +20,4 @@
 На тестовой выборке достигнуто значение RMSE = 41.90, что лучше целевого значения <= 48.  
 
 ## Доп. информация
-Основные инструменты: Pandas, Python, Scikit-learn, statsmodels
+Основные инструменты: Pandas, Python, LightGBM, Scikit-learn, statsmodels
