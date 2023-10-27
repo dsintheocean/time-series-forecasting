@@ -12,9 +12,8 @@ Additional features were created, including:
 - Moving average.
   
 The best value of the target RMSE metric was achieved using an LGBM model with the following hyperparameters:
-- Criterion: 'friedman_mse'
-- Max Depth: 5  
-- Min Samples Split: 4
+- Learning_rate': 0.05  
+- N_estimators': 100  
   
 On the test dataset, an RMSE value of 41.90 was achieved, which is better than the target value of <= 48.  
 
