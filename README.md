@@ -1,8 +1,22 @@
-## Taxi Order Forecasting
+# Taxi Orders Next Hour Forecasting
 
-### Project Description:
-An aggregator company has gathered historical data on taxi orders at airports. To attract more drivers during peak demand periods, it's essential to predict the number of taxi orders for the next hour. The goal is to build a model for such forecasting.
-The target metric is Root Mean Square Error (RMSE), and the target value on the test dataset should not exceed 48.
+## Project Description
+A machine learning model is needed for a taxi application to predict the number of taxi orders for the next hour. The goal is to attract more drivers during peak demand periods. Historical data on taxi orders is available.  
 
-### Data Description:
-The data is stored in the 'taxi.csv' file. The number of orders is located in the 'num_orders' column.
+## Key Findings
+Data preprocessing was carried out, including resampling and decomposition into trend, seasonality, and residuals.  
+A pattern of daily and weekly cyclicality in taxi orders was identified.  
+Additional features were created, including:  
+- Calendar features (month, day, day of the week, hour).
+- Lag features (time-shifted by various hours).
+- Moving average.
+  
+The target RMSE metric was achieved using an LGBM model with the following hyperparameters:  
+- Criterion: 'friedman_mse'
+- Max Depth: 5  
+- Min Samples Split: 4
+  
+On the test dataset, an RMSE value of 41.90 was achieved, which is better than the target value of <= 48.  
+
+## Additional Information
+Toolkit: Pandas, Python, Scikit-learn, statsmodels
