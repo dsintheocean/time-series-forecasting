@@ -11,7 +11,7 @@ Additional features were created, including:
 - Lag features (time-shifted by various hours).
 - Moving average.
   
-The target RMSE metric was achieved using an LGBM model with the following hyperparameters:  
+The best value of the target RMSE metric was achieved using an LGBM model with the following hyperparameters:
 - Criterion: 'friedman_mse'
 - Max Depth: 5  
 - Min Samples Split: 4
